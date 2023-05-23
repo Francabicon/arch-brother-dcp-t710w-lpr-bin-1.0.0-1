@@ -1,0 +1,27 @@
+post_install() {
+	# ESP Package Manager v4.1
+	/opt/brother/Printers/dcpt710w/inf/setupPrintcapij dcpt710w -i USB
+
+	# cupswrapper
+	/opt/brother/Printers/dcpt710w/cupswrapper/cupswrapperdcpt710w
+
+	systemctl restart org.cups.cupsd.service
+}
+
+
+post_upgrade() {
+	/bin/true
+}
+
+pre_remove() {
+	# lpr
+	/opt/brother/Printers/dcpt710w/cupswrapper/cupswrapperdcpt710w -e
+
+	# cupswrapper
+	/opt/brother/Printers/dcpt710w/inf/setupPrintcapij dcpt710w -e
+}
+
+op=$1
+shift
+
+$op "$@"
