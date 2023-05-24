@@ -40,7 +40,7 @@ Contributions are welcome! If you would like to contribute to this project, plea
 5. Submit a pull request to the main repository.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
 
 ## Contact
 If you have any questions or suggestions regarding this project, feel free to contact the author, Francabicon, at [francabicon@aol.com](mailto:francabicon@aol.com).
